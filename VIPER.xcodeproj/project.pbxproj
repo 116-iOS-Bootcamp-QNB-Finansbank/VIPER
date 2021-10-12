@@ -7,6 +7,14 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2300CAC12712EA8900B5CC12 /* NetworkError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2300CAC02712EA8900B5CC12 /* NetworkError.swift */; };
+		2300CAC92712EBBE00B5CC12 /* VIPERTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2300CAC82712EBBE00B5CC12 /* VIPERTests.swift */; };
+		2300CAD12712EBF000B5CC12 /* MockClientNetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2300CAD02712EBF000B5CC12 /* MockClientNetworkService.swift */; };
+		2300CAD32712EDE900B5CC12 /* ResourceLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2300CAD22712EDE900B5CC12 /* ResourceLoader.swift */; };
+		2300CAD52712EF1C00B5CC12 /* movie.json in Sources */ = {isa = PBXBuildFile; fileRef = 2300CAD42712EF1C00B5CC12 /* movie.json */; };
+		2300CAF62712FB3E00B5CC12 /* MockMovieListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2300CAF52712FB3E00B5CC12 /* MockMovieListViewController.swift */; };
+		2300CAF82712FC8400B5CC12 /* MockMovieListRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2300CAF72712FC8400B5CC12 /* MockMovieListRouter.swift */; };
+		2300CAFA2712FD0600B5CC12 /* MovieListTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2300CAF92712FD0600B5CC12 /* MovieListTests.swift */; };
 		233200DC2709A95700CB5E5D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 233200DB2709A95700CB5E5D /* AppDelegate.swift */; };
 		233200DE2709A95700CB5E5D /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 233200DD2709A95700CB5E5D /* SceneDelegate.swift */; };
 		233200E52709A95800CB5E5D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 233200E42709A95800CB5E5D /* Assets.xcassets */; };
@@ -32,7 +40,27 @@
 		2332011A2709B7D200CB5E5D /* MovieListRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 233201192709B7D200CB5E5D /* MovieListRouter.swift */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		2300CACB2712EBBE00B5CC12 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 233200D02709A95700CB5E5D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 233200D72709A95700CB5E5D;
+			remoteInfo = VIPER;
+		};
+/* End PBXContainerItemProxy section */
+
 /* Begin PBXFileReference section */
+		2300CAC02712EA8900B5CC12 /* NetworkError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkError.swift; sourceTree = "<group>"; };
+		2300CAC62712EBBE00B5CC12 /* VIPERTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = VIPERTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		2300CAC82712EBBE00B5CC12 /* VIPERTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VIPERTests.swift; sourceTree = "<group>"; };
+		2300CACA2712EBBE00B5CC12 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2300CAD02712EBF000B5CC12 /* MockClientNetworkService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockClientNetworkService.swift; sourceTree = "<group>"; };
+		2300CAD22712EDE900B5CC12 /* ResourceLoader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResourceLoader.swift; sourceTree = "<group>"; };
+		2300CAD42712EF1C00B5CC12 /* movie.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = movie.json; sourceTree = "<group>"; };
+		2300CAF52712FB3E00B5CC12 /* MockMovieListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockMovieListViewController.swift; sourceTree = "<group>"; };
+		2300CAF72712FC8400B5CC12 /* MockMovieListRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockMovieListRouter.swift; sourceTree = "<group>"; };
+		2300CAF92712FD0600B5CC12 /* MovieListTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieListTests.swift; sourceTree = "<group>"; };
 		233200D82709A95700CB5E5D /* VIPER.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = VIPER.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		233200DB2709A95700CB5E5D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		233200DD2709A95700CB5E5D /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -61,6 +89,13 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		2300CAC32712EBBE00B5CC12 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		233200D52709A95700CB5E5D /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -71,10 +106,50 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2300CAC72712EBBE00B5CC12 /* VIPERTests */ = {
+			isa = PBXGroup;
+			children = (
+				2300CAF32712FB1000B5CC12 /* Movie */,
+				2300CAC82712EBBE00B5CC12 /* VIPERTests.swift */,
+				2300CAF22712FAF700B5CC12 /* Network */,
+				2300CACA2712EBBE00B5CC12 /* Info.plist */,
+			);
+			path = VIPERTests;
+			sourceTree = "<group>";
+		};
+		2300CAF22712FAF700B5CC12 /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				2300CAD22712EDE900B5CC12 /* ResourceLoader.swift */,
+				2300CAD42712EF1C00B5CC12 /* movie.json */,
+				2300CAD02712EBF000B5CC12 /* MockClientNetworkService.swift */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		2300CAF32712FB1000B5CC12 /* Movie */ = {
+			isa = PBXGroup;
+			children = (
+				2300CAF42712FB1A00B5CC12 /* MovieList */,
+			);
+			path = Movie;
+			sourceTree = "<group>";
+		};
+		2300CAF42712FB1A00B5CC12 /* MovieList */ = {
+			isa = PBXGroup;
+			children = (
+				2300CAF92712FD0600B5CC12 /* MovieListTests.swift */,
+				2300CAF52712FB3E00B5CC12 /* MockMovieListViewController.swift */,
+				2300CAF72712FC8400B5CC12 /* MockMovieListRouter.swift */,
+			);
+			path = MovieList;
+			sourceTree = "<group>";
+		};
 		233200CF2709A95700CB5E5D = {
 			isa = PBXGroup;
 			children = (
 				233200DA2709A95700CB5E5D /* VIPER */,
+				2300CAC72712EBBE00B5CC12 /* VIPERTests */,
 				233200D92709A95700CB5E5D /* Products */,
 			);
 			sourceTree = "<group>";
@@ -83,6 +158,7 @@
 			isa = PBXGroup;
 			children = (
 				233200D82709A95700CB5E5D /* VIPER.app */,
+				2300CAC62712EBBE00B5CC12 /* VIPERTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -108,6 +184,7 @@
 			children = (
 				233200F42709A9A800CB5E5D /* NetworkService.swift */,
 				233200F62709A9A800CB5E5D /* ClientService.swift */,
+				2300CAC02712EA8900B5CC12 /* NetworkError.swift */,
 			);
 			path = Network;
 			sourceTree = "<group>";
@@ -161,6 +238,24 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		2300CAC52712EBBE00B5CC12 /* VIPERTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2300CACD2712EBBE00B5CC12 /* Build configuration list for PBXNativeTarget "VIPERTests" */;
+			buildPhases = (
+				2300CAC22712EBBE00B5CC12 /* Sources */,
+				2300CAC32712EBBE00B5CC12 /* Frameworks */,
+				2300CAC42712EBBE00B5CC12 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				2300CACC2712EBBE00B5CC12 /* PBXTargetDependency */,
+			);
+			name = VIPERTests;
+			productName = VIPERTests;
+			productReference = 2300CAC62712EBBE00B5CC12 /* VIPERTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 		233200D72709A95700CB5E5D /* VIPER */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 233200EC2709A95800CB5E5D /* Build configuration list for PBXNativeTarget "VIPER" */;
@@ -187,6 +282,10 @@
 				LastSwiftUpdateCheck = 1250;
 				LastUpgradeCheck = 1250;
 				TargetAttributes = {
+					2300CAC52712EBBE00B5CC12 = {
+						CreatedOnToolsVersion = 12.5.1;
+						TestTargetID = 233200D72709A95700CB5E5D;
+					};
 					233200D72709A95700CB5E5D = {
 						CreatedOnToolsVersion = 12.5.1;
 					};
@@ -206,11 +305,19 @@
 			projectRoot = "";
 			targets = (
 				233200D72709A95700CB5E5D /* VIPER */,
+				2300CAC52712EBBE00B5CC12 /* VIPERTests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		2300CAC42712EBBE00B5CC12 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		233200D62709A95700CB5E5D /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -225,6 +332,20 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		2300CAC22712EBBE00B5CC12 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2300CAFA2712FD0600B5CC12 /* MovieListTests.swift in Sources */,
+				2300CAC92712EBBE00B5CC12 /* VIPERTests.swift in Sources */,
+				2300CAF82712FC8400B5CC12 /* MockMovieListRouter.swift in Sources */,
+				2300CAF62712FB3E00B5CC12 /* MockMovieListViewController.swift in Sources */,
+				2300CAD12712EBF000B5CC12 /* MockClientNetworkService.swift in Sources */,
+				2300CAD52712EF1C00B5CC12 /* movie.json in Sources */,
+				2300CAD32712EDE900B5CC12 /* ResourceLoader.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		233200D42709A95700CB5E5D /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -238,6 +359,7 @@
 				233201132709A9A800CB5E5D /* MovieListBuilder.swift in Sources */,
 				233201092709A9A800CB5E5D /* MovieDetailViewModel.swift in Sources */,
 				233201072709A9A800CB5E5D /* MovieDTO.swift in Sources */,
+				2300CAC12712EA8900B5CC12 /* NetworkError.swift in Sources */,
 				2332010A2709A9A800CB5E5D /* MovieDetailBuilder.swift in Sources */,
 				2332010E2709A9A800CB5E5D /* MovieDetailPresentation.swift in Sources */,
 				2332010B2709A9A800CB5E5D /* MovieDetailContracts.swift in Sources */,
@@ -252,6 +374,14 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		2300CACC2712EBBE00B5CC12 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 233200D72709A95700CB5E5D /* VIPER */;
+			targetProxy = 2300CACB2712EBBE00B5CC12 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		233200E62709A95800CB5E5D /* LaunchScreen.storyboard */ = {
@@ -273,6 +403,46 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		2300CACE2712EBBE00B5CC12 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 9UAK289TV9;
+				INFOPLIST_FILE = VIPERTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.semihemreunlu.VIPERTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/VIPER.app/VIPER";
+			};
+			name = Debug;
+		};
+		2300CACF2712EBBE00B5CC12 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 9UAK289TV9;
+				INFOPLIST_FILE = VIPERTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.semihemreunlu.VIPERTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/VIPER.app/VIPER";
+			};
+			name = Release;
+		};
 		233200EA2709A95800CB5E5D /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -430,6 +600,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		2300CACD2712EBBE00B5CC12 /* Build configuration list for PBXNativeTarget "VIPERTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2300CACE2712EBBE00B5CC12 /* Debug */,
+				2300CACF2712EBBE00B5CC12 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		233200D32709A95700CB5E5D /* Build configuration list for PBXProject "VIPER" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (

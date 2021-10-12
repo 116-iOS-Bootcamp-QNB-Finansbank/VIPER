@@ -10,11 +10,7 @@ import Foundation
 class MovieListPresenter: NSObject, MovieListPresenterProtocol {
     private unowned let view: MovieListViewProtocol
     private let router: MovieListRouterProtocol
-    private var interactor: MovieListInteractorProtocol {
-        didSet {
-            self.interactor.delegate = self
-        }
-    }
+    private var interactor: MovieListInteractorProtocol 
     
     init(interactor: MovieListInteractorProtocol,
          view: MovieListViewProtocol,

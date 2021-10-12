@@ -14,7 +14,9 @@ class MovieListBuilder {
         let interactor = MovieListInteractor(service: appContainer.service)
         let router = MovieListRouter(view: view)
         let presenter = MovieListPresenter(interactor: interactor, view: view, router: router)
+        
         view.presenter = presenter
+        interactor.delegate = presenter
         return view
     }
 }

@@ -8,7 +8,7 @@
 import Foundation
 
 protocol ClientNetworkServiceProtocol {
-    func movies(completion: @escaping (MovieDTO?, Error?) -> Void)
+    func movies(completion: @escaping (MovieDTO?, NetworkError?) -> Void)
 }
 
 class ClientNetworkService: ClientNetworkServiceProtocol {
@@ -16,7 +16,7 @@ class ClientNetworkService: ClientNetworkServiceProtocol {
     
     private let networkService = NetworkService.instance
     
-    func movies(completion: @escaping (MovieDTO?, Error?) -> Void) {
+    func movies(completion: @escaping (MovieDTO?, NetworkError?) -> Void) {
         networkService.get(from: moviesURLString, completion: completion)
     }
 }

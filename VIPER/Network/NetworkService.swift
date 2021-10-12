@@ -10,14 +10,14 @@ import Foundation
 class NetworkService {
     static let instance = NetworkService()
     
-    func get<T: Codable>(from urlString: String, completion: @escaping (T?, Error?) -> Void) {
+    func get<T: Codable>(from urlString: String, completion: @escaping (T?, NetworkError?) -> Void) {
         guard let url = URL(string: urlString) else {
-            completion(nil, nil)
+            completion(nil, NetworkError.wrongUrlType)
             return
         }
         URLSession.shared.dataTask(with: url) { data, response, error in
             guard error == nil else {
-                completion(nil, error)
+                completion(nil, NetworkError.error(error))
                 return
             }
             
@@ -27,7 +27,7 @@ class NetworkService {
                 let result = try JSONDecoder().decode(T.self, from: data)
                 completion(result, nil)
             } catch {
-                completion(nil, error)
+                completion(nil, NetworkError.decoding)
             }
         }.resume()
     }
